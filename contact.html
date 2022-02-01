@@ -35,15 +35,16 @@
   </header>
   <main>
     <section>
-      <div class="promotion">
-        <h2>Here is the promotional video</h2>
-        <img src="https://via.placeholder.com/800x450?text=Video" alt="placeholder image">
-        <video controls width="800">
-          <source src="#">
-        </video>
-        <h3>
-            <a href="#">SHOP NOW</a>
-        </h3>
+      <div class="contact">
+        <h2>Here is the contact form</h2>
+        <img src="https://via.placeholder.com/450x450?text=Video" alt="placeholder image">
+            <h4 class="hidden">Subcribtion Form</h4>
+            <form action="subcribtion.php" method="POST" enctype="text/plain">
+              <input name="Name" type="name" required placeholder="Name">
+              <input name="Email" type="email" required placeholder="Email">
+              <input name="Message" type="message" required placeholder="Message">
+              <button type="submit" class="f-right" value="Send">SIGN UP</button>
+            </form>
       </div>
     </section>
   </main>
