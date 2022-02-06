@@ -1,0 +1,679 @@
+@charset "UTF-8";
+
+/*
+Style Name: HTML Attributes & Forms
+Description: 2022W FIP
+Author: Joanna Chow
+Version: 1.0
+Tags: FIP
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+General Style
+--------------------------------------------------------------*/
+
+.hidden {
+  display: none;
+}
+
+.margin-tb {
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+body {
+	background: #eeeeee;
+}
+
+@font-face {
+    font-family: "brice-black";
+    src: url("../assets/fonts/brice-blacksemiexpanded-webfont.woff2") format("woff2"),
+         url("../assets/fonts/brice-blacksemiexpanded-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "brice-bold";
+    src: url("../assets/fonts/brice-boldsemicondensed-webfont.woff2") format("woff2"),
+         url("../assets/fonts/brice-boldsemicondensed-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+.heading {
+  display: flex;
+  flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2.5em 0 1em 4em;
+}
+
+ .head-logo {
+	 	float: left;
+ }
+
+.logo-img {
+  width: 200px;
+}
+
+.nav {
+	float: right;
+	padding-right: 45px;
+}
+
+.nav ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: start;
+}
+
+.nav li{
+    display: inline;
+    margin-right: 2em;
+ }
+
+ .nav li a {
+	 text-decoration: none;
+ }
+
+.nav li a {
+	font-family: "brice-bold";
+	font-size: 22px;
+}
+
+/*--------------------------------------------------------------
+About
+--------------------------------------------------------------*/
+
+.about {
+	background-image: url("../images/beach_beer_on_side.jpg");
+	height: 899px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.star-icon {
+	width: 96px;
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 500px;
+	padding: 10em;
+}
+
+.about-text > h2, .about-text > p{
+	text-align: left;
+	padding-left: 1.5em;
+}
+
+.star-icon {
+	position: relative;
+	top: 10%;
+	padding-left: 0 !important;
+}
+
+
+.about-text > .star-icon {
+	-moz-animation: rotation 8s infinite linear;
+	-webkit-animation: rotation 8s infinite linear;
+	animation: rotation 8s infinite linear;
+}
+
+@-moz-keyframes rotation {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+	from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.about-text h2 {
+	font-family: "brice-black";
+	font-size: 40px;
+	color: #1a2175;
+	line-height: 45px;
+	margin-bottom: 1em;
+}
+
+.about-text p {
+	font-family: "brice-bold";
+	font-size: 25px;
+	line-height: 32px;
+	color: #1861a9;
+	padding-left: 2.5em;
+	margin-bottom: 1em;
+}
+
+.more-btn {
+	padding-left: 3.5em;
+}
+
+/*--------------------------------------------------------------
+Ingredients
+--------------------------------------------------------------*/
+
+.ingredients {
+	margin-top: 5em;
+	padding: 2em;
+}
+
+.ingredients-head h2{
+	font-family: "brice-black";
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #1a2175;
+	line-height: 70px;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.ingredients-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 50px;
+}
+
+.ingredients-info > div {
+	text-align: center;
+	width: 400px;
+}
+
+.ingredients-info p {
+	font-family: "brice-bold";
+	font-size: 30px;
+	color: #1861a9;
+	line-height: 45px;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-thickness: .3em;
+	margin-top: 1em;
+}
+
+/*--------------------------------------------------------------
+Banner
+--------------------------------------------------------------*/
+
+.banner {
+	background-color: #1861a9;
+	overflow: hidden;
+	padding: 1em;
+}
+
+.banner-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner-text p {
+	font-family: "brice-bold";
+	font-size: 30px;
+	color: #eeeeee;
+	text-align: center;
+	margin-right: .5em;
+}
+
+.banner-text > .star-icon {
+	width: 65px;
+	margin-left: .5em;
+}
+
+.banner-text {
+	-moz-transform: translateX(100%);
+ 	-webkit-transform: translateX(100%);
+ 	transform: translateX(100%);
+
+ 	-moz-animation: scroll-animation 20s linear infinite;
+ 	-webkit-animation: scroll-animation 20s linear infinite;
+ 	animation: scroll-animation 20s linear infinite;
+}
+
+@-moz-keyframes scroll-animation {
+	from { -moz-transform: translateX(100%); }
+	to { -moz-transform: translateX(-100%); }
+}
+
+@-webkit-keyframes scroll-animation {
+ 	from { -webkit-transform: translateX(100%); }
+ 	to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes scroll-animation {
+ 	from {
+	 	-moz-transform: translateX(100%);
+	 	-webkit-transform: translateX(100%);
+	 	transform: translateX(100%);
+ }
+ 	to {
+	 	-moz-transform: translateX(-100%);
+	 	-webkit-transform: translateX(-100%);
+	 	transform: translateX(-100%);
+ }
+
+}
+
+ /*--------------------------------------------------------------
+ Product
+ --------------------------------------------------------------*/
+
+ .product {
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: center;
+	 margin-top: 5em;
+ }
+
+ .product-text h2{
+	 font-family: "brice-black";
+	 font-size: 50px;
+	 text-transform: uppercase;
+	 color: #1a2175;
+	 line-height: 70px;
+	 margin-bottom: .3em;
+	 text-align: left;
+ }
+
+ .product-text p {
+	 font-family: "brice-bold";
+	 font-size: 35px;
+	 color: #1861a9;
+	 margin-bottom: .8em;
+	 text-align: left;
+ }
+
+ .product > .shop-img {
+	 width: 254px;
+ }
+
+.product-img {
+	background-image: url("../images/blue_circle.png");
+	background-color: #eeeeee;
+	height: 598px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.beer-img {
+	width: 243px;
+}
+
+.beer-img {
+	position:relative;
+	-moz-animation: updown 2s ease-in-out alternate infinite;
+ 	-webkit-animation: updown 2s ease-in-out alternate infinite;
+ 	animation: updown 2s ease-in-out alternate infinite;
+}
+
+@-moz-keyframes updown {
+		0% {
+				top :10px;
+		}
+		50% {
+				top :24px;
+		}
+		100% {
+				top :10px;
+	}
+}
+
+@-webkit-keyframes updown {
+		0% {
+				top :10px;
+		}
+		50% {
+				top :24px;
+		}
+		100% {
+				top :10px;
+	}
+}
+
+@keyframes updown {
+		0% {
+				top :10px;
+		}
+		50% {
+				top :24px;
+		}
+		100% {
+				top :10px;
+	}
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 5em;
+	background-color: #00569C;
+	padding: 2em 4em;
+}
+
+.nav-list {
+	float: left;
+	padding-right: 45px;
+}
+
+.foot-nav ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: start;
+}
+
+.foot-nav li{
+  display: block;
+ }
+
+ .foot-nav li a {
+	 text-decoration: none;
+ }
+
+.foot-nav li a {
+	font-family: "brice-bold";
+	font-size: 22px;
+	line-height: 30px;
+	color: #eeeeee;
+}
+
+.foot-logo-img {
+	width: 200px;
+}
+
+.foot-icon img {
+	height: 25px;
+	margin-right: 20px;
+}
+
+/*--------------------------------------------------------------
+About Page
+--------------------------------------------------------------*/
+
+.about-page {
+	margin-top: 8em;
+}
+
+.about-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1.5em;
+}
+
+.about-main h2 {
+	font-family: "brice-black";
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #1a2175;
+	line-height: 70px;
+}
+
+.about-page p {
+	font-family: "brice-bold";
+	font-size: 35px;
+	color: #1861a9;
+	line-height: 50px;
+	text-align: left;
+}
+
+.about-main p {
+	background-color: #1861a9;
+	color: #eeeeee;
+	padding: 2em;
+}
+
+.about-sec {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 50px;
+	margin-top: 8em;
+	padding: 0 5em 0 5em;
+}
+
+.about-sec >* {
+	flex: 1 1;
+}
+
+.about-img {
+	width: 100%;
+}
+/*--------------------------------------------------------------
+Product Page
+--------------------------------------------------------------*/
+
+.product-page {
+	margin-top: 4em;
+	padding: 0 5em 0 5em;
+}
+
+.product-page h2 {
+	font-family: "brice-black";
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #1a2175;
+	line-height: 70px;
+	text-align: center;
+}
+
+.product-sec {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 4em;
+}
+
+.product-sec img {
+	width: 200px;
+}
+
+.product-sec h3 {
+	font-family: "brice-bold";
+	font-size: 35px;
+	color: #1861a9;
+	line-height: 20px;
+}
+
+.product-sec h4 {
+	font-family: "brice-bold";
+	font-size: 20px;
+	color: #1861a9;
+	line-height: 60px;
+}
+
+.product-sec a {
+	text-decoration: none;
+}
+
+.product-sec a {
+	font-family: "brice-bold";
+	font-size: 30px;
+	color: #1a2175;
+}
+
+.product-sec h5 > a:hover {
+	border-bottom: solid 5px #1a2175;
+}
+
+/*--------------------------------------------------------------
+Promotion Page
+--------------------------------------------------------------*/
+
+.promotion {
+	margin-top: 8em;
+	padding: 0 5em 0 5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.promotion h2 {
+	font-family: "brice-black";
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #1a2175;
+	line-height: 70px;
+	text-align: center;
+}
+
+.video-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+video {
+	margin-top: 4em;
+}
+
+.promotion a {
+	margin-top: 4em;
+}
+
+/*--------------------------------------------------------------
+Contact Page
+--------------------------------------------------------------*/
+
+.contact {
+	margin-top: 8em;
+	padding: 0 5em 0 5em;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.contact h2 {
+	font-family: "brice-black";
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #1a2175;
+	line-height: 70px;
+	text-align: center;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 50px;
+	margin-top: 8em;
+}
+
+.contact img {
+	width: 400px;
+}
+
+.contact-form form {
+	background-color: #1861a9;
+	padding: 3em;
+}
+
+.contact-form input, textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	border-bottom: 1px solid #eeeeee;
+	box-sizing: border-box;
+	background:transparent;
+}
+
+.contact form input, textarea {
+	font-family: "brice-bold";
+	font-size: 20px;
+	color: #eeeeee;
+}
+
+.contact-form button {
+	font-family: "brice-black";
+	font-size: 18px;
+	padding: 10px;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	border-color: #1a2175;
+	margin-top: 20px;
+	color: #1a2175;
+}
+
+.contact-form button:hover {
+	background-color: #1a2175;
+	margin-top: 20px;
+	color: #eeeeee;
+}
