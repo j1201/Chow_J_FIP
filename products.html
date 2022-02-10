@@ -24,12 +24,17 @@
             <h3 class="hidden">Header Nav</h3>
               <ul>
                 <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
                 <li class="nav-item"><a class="nav-link" href="ads.html">Promotion</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 <li>
                   <a class="cart-logo" href="#">
                     <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
+                  </a>
+                </li>
+                <li>
+                  <a class="search-logo" href="#">
+                    <img class="search-img" src="images/icon_search.png" alt="Search button">
                   </a>
                 </li>
               </ul>
@@ -39,37 +44,45 @@
     </header>
   <main>
     <section class="product-page">
+      <h1 class="hidden">Product Page</h1>
       <h2>SHOP</h2>
       <div class="product-sec">
-        <div class="product-one">
-          <a href="#">
-              <img class="product-one-img" src="images/beer_bottle.png" alt="'Snuggle' Wheat Ale - 1 Pack">
-          </a>
-          <h3>Wheat Ale - 1 Pack</h3>
+        <div class="product-img-container">
+              <img class="product-img" src="images/beer_bottle.png" alt="Wheat ale image">
+        </div>
+        <div class="product-info">
+          <h3>Wheat Ale</h3>
           <h4>$5.00</h4>
-          <h5>
-              <a href="#">DETAILS</a>
-          </h5>
-        </div>
-        <div class="product-two">
-          <a href="#">
-              <img class="product-two-img" src="images/beer_bottle.png" alt="'Snuggle' Wheat Ale - 6 Pack">
+          <div class="product-highlight">
+              <p>0 Sugar</p>
+              <p>Low Calories</p>
+              <p>0 Artificial Flavor</p>
+              <p>Plant-based</p>
+              <p>Natural Ingredients</p>
+          </div>
+          <p class="product-desc">Beck's signature wheat ale is fermented with organic elderflower and lemon. It gives you a clean, crispy and snuggely refreshing taste that you could not find elsewhere. To best enjoy the taste of beer, we recommend you to drink it at around 33-45 °F, pour it in the beer glass, and ENJOY!</p>
+          <div class="fact-wrap">
+            <input id="collapsible" class="toggle" type="checkbox">
+            <label for="collapsible" class="fact-toggle">INGREDIENTS & NUTRITION FACT</label>
+            <div class="collapsible-content">
+              <div class="content">
+                <p>
+                  <span>INGREDIENTS</span>: Water, Wheat, Malt, Yeast, Elderflower, Lemon
+                </p>
+                <p>
+                  <span>NUTRITION FACT</span>: 89 Calories, 5g carbs, 0g sugar
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="buy-btn" href="#">
+            <button type="button" name="buy-now" class="buy-btn">
+              BUY NOW
+              <svg class="arrow_icon">
+                <path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/>
+              </svg>
+            </button>
           </a>
-          <h3>Wheat Ale - 6 Pack</h3>
-          <h4>$25.00</h4>
-          <h5>
-              <a href="#">DETAILS</a>
-          </h5>
-        </div>
-        <div class="product-three">
-          <a href="#">
-            <img class="product-three-img" src="images/beer_bottle.png" alt="'Snuggle' Wheat Ale - 12 Pack">
-          </a>
-          <h3>Wheat Ale - 12 Pack</h3>
-          <h4>$55.00</h4>
-          <h5>
-              <a href="#">DETAILS</a>
-          </h5>
         </div>
       </div>
     </section>

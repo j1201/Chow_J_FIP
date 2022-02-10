@@ -32,6 +32,11 @@
                     <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
                   </a>
                 </li>
+                <li>
+                  <a class="search-logo" href="#">
+                    <img class="search-img" src="images/icon_search.png" alt="Search button">
+                  </a>
+                </li>
               </ul>
           </nav>
         </div>
@@ -39,6 +44,7 @@
     </header>
   <main>
     <section>
+      <h1 class="hidden">Contact Page</h1>
       <div class="contact">
         <h2>Contact Us</h2>
             <h4 class="hidden">Subcribtion Form</h4>
@@ -47,7 +53,13 @@
                 <input name="Name" type="name" required placeholder="Name">
                 <input name="Email" type="email" required placeholder="Email">
                 <textarea name="Message" type="message" required placeholder="Message"></textarea>
-                <button type="submit" value="Send">SIGN UP</button>
+                <button type="submit" name="submit" class="submit-btn">
+                    SIGN UP
+                    <svg class="arrow_icon">
+                      <path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/>
+                    </svg>
+                  </button>
+                </a>
               </form>
               <img src="images/beer_graphic.png" alt="graphic of a beer">
             </div>
@@ -61,7 +73,7 @@
           <h3 class="hidden">Header Nav</h3>
               <ul>
                 <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
                 <li class="nav-item"><a class="nav-link" href="ads.html">Promotion</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>

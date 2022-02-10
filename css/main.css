@@ -120,6 +120,10 @@ Header
 	font-size: 22px;
 }
 
+.cart-img, .search-img {
+	width: 20px;
+}
+
 /*--------------------------------------------------------------
 About
 --------------------------------------------------------------*/
@@ -208,6 +212,41 @@ About
 
 .more-btn {
 	padding-left: 3.5em;
+}
+
+button {
+	font-family: "brice-bold";
+	font-size: 18px;
+	letter-spacing: .5px;
+	color: #1861a9;
+	background-color: #eeeeee;
+	border-radius: 20px;
+	border: 2px solid #1861a9;
+	padding: 10px 20px;
+}
+
+.cls-1 {
+	fill:none;
+	stroke:#1861a9;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	stroke-width:2px;
+}
+
+.arrow_icon {
+	margin-left: 60px;
+	width: 20px;
+	height: 13px;
+}
+
+button:hover {
+	color: #eeeeee;
+	background-color: #1861a9;
+	cursor: pointer;
+}
+
+button:hover .cls-1 {
+	stroke: #eeeeee;
 }
 
 /*--------------------------------------------------------------
@@ -325,6 +364,7 @@ Banner
 	 justify-content: space-around;
 	 align-items: center;
 	 margin-top: 5em;
+	 padding: 0 2em;
  }
 
  .product-text h2{
@@ -345,11 +385,7 @@ Banner
 	 text-align: left;
  }
 
- .product > .shop-img {
-	 width: 254px;
- }
-
-.product-img {
+.about-product-img {
 	background-image: url("../images/blue_circle.png");
 	background-color: #eeeeee;
 	height: 598px;
@@ -358,11 +394,11 @@ Banner
 	background-size: contain;
 }
 
-.beer-img {
-	width: 243px;
+.about-beer-img {
+	width: 280px;
 }
 
-.beer-img {
+.about-beer-img {
 	position:relative;
 	-moz-animation: updown 2s ease-in-out alternate infinite;
  	-webkit-animation: updown 2s ease-in-out alternate infinite;
@@ -460,7 +496,7 @@ About Page
 --------------------------------------------------------------*/
 
 .about-page {
-	margin-top: 8em;
+	margin-top: 5em;
 }
 
 .about-main {
@@ -475,8 +511,16 @@ About Page
 	font-family: "brice-black";
 	font-size: 50px;
 	text-transform: uppercase;
-	color: #1a2175;
+	color: #1861a9;
 	line-height: 70px;
+	text-align: center;
+	justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+	border: 2px solid #1a2175;
+	padding: 1em;
+  text-align: center;
+  display: flex;
 }
 
 .about-page p {
@@ -515,7 +559,7 @@ Product Page
 --------------------------------------------------------------*/
 
 .product-page {
-	margin-top: 4em;
+	margin-top: 5em;
 	padding: 0 5em 0 5em;
 }
 
@@ -523,48 +567,163 @@ Product Page
 	font-family: "brice-black";
 	font-size: 50px;
 	text-transform: uppercase;
-	color: #1a2175;
+	color: #1861a9;
 	line-height: 70px;
 	text-align: center;
+	justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+	border: 2px solid #1a2175;
+	margin: 0 9em;
+	padding: .5em 0;
+  text-align: center;
+  display: flex;
 }
 
 .product-sec {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	margin-top: 4em;
+	justify-content: center;
+	margin-top: 6em;
+	gap: 80px;
 }
 
-.product-sec img {
-	width: 200px;
+.product-sec > * {
+	flex: 45% 55%;
 }
 
-.product-sec h3 {
-	font-family: "brice-bold";
-	font-size: 35px;
+.product-img {
+	display: inline-flex;
+	width: 350px;
+	text-align: center;
+}
+
+.product-info h3{
+	font-family: "brice-black";
+	font-size: 40px;
 	color: #1861a9;
-	line-height: 20px;
+	margin-bottom: 20px;
 }
 
-.product-sec h4 {
-	font-family: "brice-bold";
+.product-info h4{
+	font-family: "brice-black";
 	font-size: 20px;
 	color: #1861a9;
-	line-height: 60px;
+	margin-bottom: 40px;
 }
 
-.product-sec a {
-	text-decoration: none;
+.buy-btn {
+	margin-bottom: 30px;
 }
 
-.product-sec a {
+.product-desc  {
 	font-family: "brice-bold";
-	font-size: 30px;
-	color: #1a2175;
+	font-size: 25px;
+	line-height: 35px;
+	color: #1861a9;
+	padding: 20px;
+	margin: 30px 0;
+	border-radius: 20px;
+	border: 2px solid #1861a9;
 }
 
-.product-sec h5 > a:hover {
-	border-bottom: solid 5px #1a2175;
+.product-highlight {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.product-highlight p {
+	font-family: "brice-bold";
+	font-size: 20px;
+	color: #eeeeee;
+	text-align: center;
+	margin-right: .5em;
+	background-color: #1861a9;
+	border-radius: 100px;
+	padding: 10px 20px;
+	transform: rotate(340deg);
+}
+
+input[type='checkbox'] {
+	display: none;
+}
+
+.fact-wrap {
+	margin: 1.2rem 0;
+}
+
+.fact-toggle {
+	display: block;
+	font-family: "brice-bold";
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	color: #eeeeee;
+	background: #1861a9;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: all 0.25s ease-out;
+}
+
+.fact-toggle::before {
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: 10px;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+
+.toggle:checked+.fact-toggle::before {
+	transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height .25s ease-in-out;
+	margin-bottom: 30px;
+}
+
+.toggle:checked + .fact-toggle + .collapsible-content {
+	max-height: 350px;
+}
+
+.toggle:checked+.fact-toggle {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content {
+	border: 2px solid #1861a9;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: .5rem 1rem;
+}
+
+.collapsible-content p {
+	margin-bottom: 0;
+}
+
+.content span {
+	font-family: "brice-bold";
+	font-size: 20px;
+	line-height: 25px;
+	color: #1861a9;
+	padding: 10px;
+}
+
+.content p {
+	font-family: "brice-bold";
+	font-size: 18px;
+	letter-spacing: 0;
+	color: #1861a9;
+	padding: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -572,7 +731,7 @@ Promotion Page
 --------------------------------------------------------------*/
 
 .promotion {
-	margin-top: 8em;
+	margin-top: 5em;
 	padding: 0 5em 0 5em;
 	display: flex;
 	flex-direction: column;
@@ -584,9 +743,16 @@ Promotion Page
 	font-family: "brice-black";
 	font-size: 50px;
 	text-transform: uppercase;
-	color: #1a2175;
+	color: #1861a9;
 	line-height: 70px;
 	text-align: center;
+	justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+	border: 2px solid #1a2175;
+	padding: 1em ;
+  text-align: center;
+  display: flex;
 }
 
 .video-container {
@@ -609,7 +775,7 @@ Contact Page
 --------------------------------------------------------------*/
 
 .contact {
-	margin-top: 8em;
+	margin-top: 5em;
 	padding: 0 5em 0 5em;
 	display: flex;
 	flex-direction: column;
@@ -623,6 +789,20 @@ Contact Page
 	color: #1a2175;
 	line-height: 70px;
 	text-align: center;
+	font-family: "brice-black";
+	font-size: 50px;
+	text-transform: uppercase;
+	color: #1861a9;
+	line-height: 70px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	border: 2px solid #1a2175;
+	margin: 0 6em;
+	padding: .5em 0;
+	text-align: center;
+	display: flex;
 }
 
 .contact-form {
@@ -669,7 +849,7 @@ Contact Page
 	border-radius: 20px;
 	border-color: #1a2175;
 	margin-top: 20px;
-	color: #1a2175;
+	color: #1861a9;
 }
 
 .contact-form button:hover {
