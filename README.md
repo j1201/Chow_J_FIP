@@ -1,5 +1,3 @@
-## Chow_J_MT-FIP
-
 ## About the Project
 For this project, I created a 5-page website for a beer brand - Beck's. I am responsible for designing, coding and semantically tagging a static/fixed width, 5 page, HTML5 website (using Flexbox).
 

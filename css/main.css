@@ -389,13 +389,14 @@ Banner
 	background-image: url("../images/blue_circle.png");
 	background-color: #eeeeee;
 	height: 598px;
-	background-position: center;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
 }
 
 .about-beer-img {
-	width: 280px;
+	width: 160px;
+	transform: translateX(10px);
 }
 
 .about-beer-img {
@@ -585,17 +586,17 @@ Product Page
 	flex-direction: row;
 	justify-content: center;
 	margin-top: 6em;
-	gap: 80px;
+	gap: 40px;
 }
 
 .product-sec > * {
-	flex: 45% 55%;
+	flex: 1 1;
 }
 
 .product-img {
 	display: inline-flex;
-	width: 350px;
-	text-align: center;
+	width: 280px;
+	padding-left: 100px;
 }
 
 .product-info h3{
