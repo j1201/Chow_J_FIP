@@ -7,53 +7,53 @@
   <link rel="stylesheet" href="https://use.typekit.net/quv3cky.css">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <title>Beck's Brewery</title>
+  <title>Beck's|Home</title>
 </head>
 <body>
+  <h1 class="hidden">Home Page</h1>
   <div id="container">
-    <h1 class="hidden">Home</h1>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <div class="nav-container">
-      <header id="hero-header">
-        <!-- create drop down menu in JS -->
-        <div id="main-nav">
-          <div class="burger-menu">
-            <a href="#" class="nav-icon">
-              <img class="nav-icon-img" src="images/icon_menu.png" alt="Beck's logo">
-            </a>
+    <h1 class="hidden">Hero Header</h1>
+      <div class="nav-container">
+        <header id="hero-header">
+          <!-- create drop down menu in JS -->
+          <div id="main-nav">
+            <div class="burger-menu">
+              <a href="#" class="nav-icon">
+                <img class="nav-icon-img" src="images/icon_menu.png" alt="Beck's logo">
+              </a>
+            </div>
+            <div class="head-logo">
+              <a href="index.html">
+                  <img class="logo-img" src="images/logo.png" alt="Beck's logo">
+              </a>
+            </div>
+            <div class="shop-cart">
+              <a class="cart-logo" href="#">
+                <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
+              </a>
+            </div>
           </div>
-          <div class="head-logo">
-            <a href="index.html">
-                <img class="logo-img" src="images/logo.png" alt="Beck's logo">
-            </a>
-          </div>
-          <div class="shop-cart">
-            <a class="cart-logo" href="#">
-              <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
-            </a>
-          </div>
-        </div>
 
         <section class="about">
-          <h1 class="hidden">About</h1>
+          <h2 class="hidden">About</h2>
             <div class="about-text">
               <h2>Enjoy the Snuggle Scent of Flavour</h2>
               <p>Our beer gives you the significant mouthfeel and aroma that invites you to snuggle up with. That’s why we recommend you to pour up the beer, don’t skip out on the critical part of the tasting process, and enjoy the foam! </p>
-              <a class="more-btn" href="about.html">
-                <button type="button" name="discover-more" class="discover-btn">
-                  SHOP NOW
-                  <svg class="arrow_icon">
-                    <path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/>
-                  </svg>
-                </button>
-              </a>
+              <div class="btn-container">
+                <a class="more-btn" href="about.html">
+                    <h2>SHOP NOW
+                      <svg class="arrow_icon"><path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/></svg>
+                    </h2>
+                </a>
+              </div>
             </div>
           </section>
       </header>
     </div>
 
     <!-- menu item; controlled by JS -->
-    <h1 class="hidden">Navigation items</h1>
+    <h2 class="hidden">Navigation items</h2>
     <div id="nav-list">
       <img class="close" src="images/icon_close.png" alt="Close button">
       <input type="text" placeholder="Search">
@@ -65,36 +65,36 @@
 
     <main>
         <h1 class="hidden">Ingredients</h1>
-        <section class="ingredients margin-tb">
+        <section class="ingredients">
           <div class="ingredients-head">
             <h2>What's Inside</h2>
             <p>How Do We Make The Snuggle Scent of Fresh Beer?<br>Click on the ingredients to find out more.</p>
           </div>
-          <div class="ingredients-info">
-            <div class="ing-img view-first">
-              <img src="images/barley.png" alt="Image of barley">
-              <div class="mask">
-                  <p><span>Barley</span><br>We use organic roasted malt that improves foam, enhances viscosity, and contributes golden hues with a candy-like sweetness.</p>
-              </div>
+        <div class="ingredients-info">
+          <div class="ing-img view-first">
+            <img src="images/barley.png" alt="Image of barley">
+            <div class="mask">
+                <p><span>Barley</span><br>We use organic roasted malt that improves foam, enhances viscosity, and contributes golden hues with a candy-like sweetness.</p>
             </div>
+          </div>
 
-            <div class="ing-img view-first">
-              <img src="images/yeast.png" alt="Graphic of yeast">
-              <div class="mask">
-                  <p><span>Barley</span><br>We use organic roasted malt that improves foam, enhances viscosity, and contributes golden hues with a candy-like sweetness.</p>
-              </div>
+          <div class="ing-img view-first">
+            <img src="images/yeast.png" alt="Graphic of yeast">
+            <div class="mask">
+                <p><span>Barley</span><br>We use organic roasted malt that improves foam, enhances viscosity, and contributes golden hues with a candy-like sweetness.</p>
             </div>
+          </div>
 
-            <div class="ing-img view-first">
-              <img src="images/hops.png" alt="Graphic of hop">
-              <div class="mask">
-                  <p><span>Barley</span><br>We use organic roasted malt that improves foam, enhances viscosity, and contributes golden hues with a candy-like sweetness.</p>
-              </div>
+          <div class="ing-img view-first">
+            <img src="images/hops.png" alt="Graphic of hop">
+            <div class="mask">
+                <p><span>Barley</span><br>We use organic roasted malt that improves foam, enhances viscosity, and contributes golden hues with a candy-like sweetness.</p>
             </div>
-
+          </div>
+        </div>
       </section>
       <section class="info-container beer-bg">
-        <h1 class="hidden">Pop up info</h1>
+        <h2 class="hidden">Pop up info</h2>
         <div class="info-btn">
           <div>
             <button type="button" name="pop up button" data-index="0"><img src="images/icon_popupBtn.png" alt="pop up button"></button>
@@ -118,9 +118,11 @@
         </div>
       </section>
       </main>
+
       <footer>
+        <h1 class="hidden">Footer</h1>
         <section class="footer">
-          <h2 class="hidden">Beck's Brewery Site Footer</h2>
+          <h2 class="hidden">Footer Items</h2>
             <div class="foot-logo" >
               <a href="index.html">
                   <img class="foot-logo-img" src="images/logo.png" alt="Beck's logo">
@@ -146,7 +148,7 @@
           </section>
 
         <!-- back to top button -->
-        <h1 class="hidden">Back to top</h1>
+        <h2 class="hidden">Back to top</h2>
         <img class="back-to-top" src="images/icon_up.png" alt="Back to top button">
       </footer>
     </div>
