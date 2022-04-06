@@ -4,101 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <title>Beck's Brewery</title>
+  <title>Beck's | Contact</title>
   </head>
   <body>
-  <h1 class="hidden">Our Story</h1>
-  <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-  <header>
-    <section class="heading">
-      <h2 class="hidden">Beck's Brewery Site Header</h2>
-      <div class="head-logo">
-        <a href="index.html">
-            <img class="logo-img" src="images/logo.png" alt="Beck's logo">
-        </a>
-      </div>
-        <div class="nav">
-          <nav aria-label="Main Navigation">
-            <h3 class="hidden">Header Nav</h3>
-              <ul>
-                <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="ads.html">Promotion</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li>
-                  <a class="cart-logo" href="#">
-                    <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
-                  </a>
-                </li>
-                <li>
-                  <a class="search-logo" href="#">
-                    <img class="search-img" src="images/icon_search.png" alt="Search button">
-                  </a>
-                </li>
-              </ul>
-          </nav>
-        </div>
-      </section>
-    </header>
-  <main>
-    <section>
-      <h1 class="hidden">Contact Page</h1>
-      <div class="contact">
-        <h2>Contact Us</h2>
-            <h4 class="hidden">Subcribtion Form</h4>
-            <div class="contact-form">
-              <form action="contact.php" method="POST" enctype="text/plain">
-                <input name="Name" type="name" required placeholder="Name">
-                <input name="Email" type="email" required placeholder="Email">
-                <textarea name="Message" type="message" required placeholder="Message"></textarea>
-                <button type="submit" name="submit" class="submit-btn">
-                    SIGN UP
-                    <svg class="arrow_icon">
-                      <path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/>
-                    </svg>
-                  </button>
+    <h1 class="hidden">Contact Page</h1>
+    <div id="container">
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <h1 class="hidden">Hero Header</h1>
+        <div class="nav-container">
+          <header id="promo-hero-header">
+            <!-- create drop down menu in JS -->
+            <div id="main-nav">
+              <div class="burger-menu">
+                <a href="#" class="nav-icon">
+                  <img class="nav-icon-img" src="images/icon_menu.png" alt="Beck's logo">
                 </a>
-              </form>
-              <img src="images/beer_graphic.png" alt="graphic of a beer">
+              </div>
+              <div class="head-logo">
+                <a href="index.html">
+                    <img class="logo-img" src="images/logo.png" alt="Beck's logo">
+                </a>
+              </div>
+              <div class="shop-cart">
+                <a class="cart-logo" href="#">
+                  <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
+                </a>
+              </div>
             </div>
+        </header>
+      </div>
+
+    <!-- menu item; controlled by JS -->
+    <h2 class="hidden">Navigation items</h2>
+    <div id="nav-list">
+      <img class="close" src="images/icon_close.png" alt="Close button">
+      <input type="text" placeholder="Search">
+      <a href="index.html"><span>Home</span></a>
+      <a href="about.html"><span>Our Story</span></a>
+      <a href="products.html"><span>Shop</span></a>
+      <a href="ads.html"><span>Promotion</span></a>
+      <a href="contact.html"><span>Contact</span></a>
+    </div>
+  <main>
+    <h1 class="hidden">Heading</h1>
+    <section class="promo-page">
+      <div class="promo-head">
+        <h2>CONTACT</h2>
+        <p>We’d love to hear from you!</p>
       </div>
     </section>
+
+    <h1 class="hidden">Subcribtion Form</h1>
+    <div>
+        <div class="contact-form">
+          <form action="contact.php" method="POST" enctype="text/plain">
+            <input name="Name" type="text" required placeholder="Name">
+            <input name="Email" type="email" required placeholder="Email">
+            <textarea name="Message" required placeholder="Message"></textarea>
+            <button type="submit" name="submit" class="submit-btn">
+                SEND
+                  <svg class="arrow_icon"><path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/></svg>
+            </button>
+          </form>
+        </div>
+    </div>
+
+    <h1 class="hidden">Contact Info</h1>
+    <div class="contact-info">
+      <div class="info-container">
+        <p>123 Beer Road,<br>London, ON, Canda A23 4B5<br>(465)879-0232<br>hello@becksbrewery.com</p>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.749229427156!2d-81.25321518454017!3d42.983555879149996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef3779e9706c1%3A0x6b0cea8bf906455!2sFanshawe%20Downtown%20Campus!5e0!3m2!1szh-TW!2sca!4v1649120474732!5m2!1szh-TW!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
   </main>
   <footer>
+    <h1 class="hidden">Footer</h1>
     <section class="footer">
-      <h2 class="hidden">Beck's Brewery Site Footer</h2>
-        <nav class="foot-nav" aria-label="Main Navigation">
-          <h3 class="hidden">Header Nav</h3>
-              <ul>
-                <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="ads.html">Promotion</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="foot-logo" >
-            <a href="index.html">
-                <img class="foot-logo-img" src="images/logo.png" alt="Beck's logo">
+      <h2 class="hidden">Footer Items</h2>
+        <div class="foot-logo" >
+          <a href="index.html">
+              <img class="foot-logo-img" src="images/logo.png" alt="Beck's logo">
+          </a>
+        </div>
+        <div class="foot-icon">
+            <a href="#">
+              <img class="icon-email" src="images/icon_email.png" alt="Email icon">
             </a>
-          </div>
-          <div class="foot-icon">
-              <a href="#">
-                <img class="icon-email" src="images/icon_email.png" alt="Email icon">
-              </a>
-              <a href="#">
-                <img class="icon-instagram" src="images/icon_instagram.png" alt="Instagram icon">
-              </a>
-              <a href="#">
-                <img class="icon-twitter" src="images/icon_twitter.png" alt="Twitter icon">
-              </a>
-              <a href="#">
-                <img class="icon-facebook" src="images/icon_facebook.png" alt="Facebook icon">
-              </a>
-          </div>
+            <a href="#">
+              <img class="icon-instagram" src="images/icon_instagram.png" alt="Instagram icon">
+            </a>
+            <a href="#">
+              <img class="icon-twitter" src="images/icon_twitter.png" alt="Twitter icon">
+            </a>
+            <a href="#">
+              <img class="icon-facebook" src="images/icon_facebook.png" alt="Facebook icon">
+            </a>
+        </div>
+        <div class="copyright">
+          Copyright © Becks All Rights Reserved
+        </div>
       </section>
+
+    <!-- back to top button -->
+    <h2 class="hidden">Back to top</h2>
+    <img class="back-to-top" src="images/icon_up.png" alt="Back to top button">
   </footer>
+</div>
 <script src="js/main.js" defer></script>
 </body>
 </html>

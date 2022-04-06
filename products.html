@@ -4,122 +4,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <title>Beck's Brewery</title>
+  <title>Beck's | SHOP</title>
   </head>
   <body>
-  <h1 class="hidden">Our Story</h1>
-  <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-  <header>
-    <section class="heading">
-      <h2 class="hidden">Beck's Brewery Site Header</h2>
-      <div class="head-logo">
-        <a href="index.html">
-            <img class="logo-img" src="images/logo.png" alt="Beck's logo">
-        </a>
+    <h1 class="hidden">Product Page</h1>
+    <div id="container">
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <h1 class="hidden">Hero Header</h1>
+        <div class="nav-container">
+          <header id="shop-hero-header">
+            <!-- create drop down menu in JS -->
+            <div id="main-nav">
+              <div class="burger-menu">
+                <a href="#" class="nav-icon">
+                  <img class="nav-icon-img" src="images/icon_menu.png" alt="Beck's logo">
+                </a>
+              </div>
+              <div class="head-logo">
+                <a href="index.html">
+                    <img class="logo-img" src="images/logo.png" alt="Beck's logo">
+                </a>
+              </div>
+              <div class="shop-cart">
+                <a class="cart-logo" href="#">
+                  <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
+                </a>
+              </div>
+            </div>
+
+          <section class="shop-page">
+            <h2 class="hidden">Shop</h2>
+              <div class="shop-head">
+                <h2>SHOP</h2>
+                <p>Looking for  the Snuggle Scent of Flavour? Try the variety pack to have all flavours in one refreshing pack.</p>
+              </div>
+            </section>
+        </header>
       </div>
-        <div class="nav">
-          <nav aria-label="Main Navigation">
-            <h3 class="hidden">Header Nav</h3>
-              <ul>
-                <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="ads.html">Promotion</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li>
-                  <a class="cart-logo" href="#">
-                    <img class="cart-img" src="images/icon_shopping_cart.png" alt="Shopping cart">
-                  </a>
-                </li>
-                <li>
-                  <a class="search-logo" href="#">
-                    <img class="search-img" src="images/icon_search.png" alt="Search button">
-                  </a>
-                </li>
-              </ul>
-          </nav>
-        </div>
-      </section>
-    </header>
+
+    <!-- menu item; controlled by JS -->
+    <h2 class="hidden">Navigation items</h2>
+    <div id="nav-list">
+      <img class="close" src="images/icon_close.png" alt="Close button">
+      <input type="text" placeholder="Search">
+      <a href="index.html"><span>Home</span></a>
+      <a href="about.html"><span>Our Story</span></a>
+      <a href="products.html"><span>Shop</span></a>
+      <a href="ads.html"><span>Promotion</span></a>
+      <a href="contact.html"><span>Contact</span></a>
+    </div>
   <main>
+    <h1 class="hidden">Shop Items</h1>
     <section class="product-page">
-      <h1 class="hidden">Product Page</h1>
-      <h2>SHOP</h2>
-      <div class="product-sec">
-        <div class="product-img-container">
-              <img class="product-img" src="images/beer_bottle.png" alt="Wheat ale image">
-        </div>
-        <div class="product-info">
-          <h3>Wheat Ale</h3>
-          <h4>$5.00</h4>
-          <div class="product-highlight">
-              <p>0 Sugar</p>
-              <p>Low Calories</p>
-              <p>0 Artificial Flavor</p>
-              <p>Plant-based</p>
-              <p>Natural Ingredients</p>
+      <div class="individual">
+        <div class="original">
+          <img src="images/beer_original.png" alt="photo of beck's original beer">
+          <h2>Classic Beer</h2>
+          <p>Original<br>$5</p>
+          <div class="shop-btn-container">
+            <a class="view-btn" href="#">
+                <h3>VIEW DETAILS</h3>
+            </a>
+            <a class="cart-btn" href="#">
+                <h3>ADD TO CART</h3>
+            </a>
           </div>
-          <p class="product-desc">Beck's signature wheat ale is fermented with organic elderflower and lemon. It gives you a clean, crispy and snuggely refreshing taste that you could not find elsewhere. To best enjoy the taste of beer, we recommend you to drink it at around 33-45 °F, pour it in the beer glass, and ENJOY!</p>
-          <div class="fact-wrap">
-            <input id="collapsible" class="toggle" type="checkbox">
-            <label for="collapsible" class="fact-toggle">INGREDIENTS & NUTRITION FACT</label>
-            <div class="collapsible-content">
-              <div class="content">
-                <p>
-                  <span>INGREDIENTS</span>: Water, Wheat, Malt, Yeast, Elderflower, Lemon
-                </p>
-                <p>
-                  <span>NUTRITION FACT</span>: 89 Calories, 5g carbs, 0g sugar
-                </p>
+        </div>
+        <div class="gold">
+          <img src="images/beer_gold.png" alt="photo of beck's gold beer">
+          <h2>Classic Beer</h2>
+          <p>Gold<br>$5</p>
+          <div class="shop-btn-container">
+            <a class="view-btn" href="#">
+                <h3>VIEW DETAILS</h3>
+            </a>
+            <a class="cart-btn" href="#">
+                <h3>ADD TO CART</h3>
+            </a>
+          </div>
+        </div>
+        <div class="light">
+          <img src="images/beer_light.png" alt="photo of beck's light beer">
+          <h2>Classic Beer</h2>
+          <p>Light<br>$5</p>
+          <div class="shop-btn-container">
+            <a class="view-btn" href="#">
+                <h3>VIEW DETAILS</h3>
+            </a>
+            <a class="cart-btn" href="#">
+                <h3>ADD TO CART</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="v-pack">
+        <img class="pack-img" src="images/beer_pack_crop.png" alt="photo of a box of beck's beers in close up">
+        <div class="pack-info">
+          <h2>Classic Beer</h2>
+          <p>Variety Pack<br>$28</p>
+          <div class="shop-btn-container">
+            <a class="view-btn" href="#">
+                <h3>VIEW DETAILS</h3>
+            </a>
+            <a class="cart-btn" href="#">
+                <h3>ADD TO CART</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- pop up info window -->
+      <div class="view-box">
+        <div class="info-popup">
+          <img class="popup-close" src="images/icon_close_blue.png" alt="Close button">
+          <img class="beer-img" src="images/beer_original.png" alt="photo of beck's original beer">
+          <div class="info-section">
+            <h2>Classic Beer</h2>
+            <h3>Original<br>$5</h3>
+            <a class="cart-btn" href="#"><h3>ADD TO CART</h3></a>
+            <div class="highlight">
+              <img src="images/zero_sugar.png" alt="icon of zero sugar">
+              <img src="images/zero_flavor.png" alt="icon of zero sugar">
+              <img src="images/low_cal.png" alt="icon of low calories">
+              <img src="images/vegan.png" alt="icon of vegan">
+            </div>
+            <div class="beer-info">
+              <div class="info-head-con">
+                <h3 class="info-head" data-index="0">About</h3>
+                <h3 class="info-head" data-index="1">Ingredients</h3>
+                <h3 class="info-head" data-index="2">Nutrition Fact</h3>
+              </div>
+              <div class="infoSec-text" data-index="0">
+                <p>Beck's signature classic beer is fermented with organic ingredients. It gives you a clean, crispy and snuggely refreshing taste that you could not find elsewhere. To best enjoy the taste of beer, we recommend you to drink it at around 33-45 °F, pour it in the beer glass, and ENJOY!</p>
               </div>
             </div>
           </div>
-          <a class="buy-btn" href="#">
-            <button type="button" name="buy-now" class="buy-btn">
-              BUY NOW
-              <svg class="arrow_icon">
-                <path class="cls-1" d="M1,6.45H13.11m-4-5L14,6.57l-4.89,4.9"/>
-              </svg>
-            </button>
-          </a>
         </div>
       </div>
     </section>
   </main>
   <footer>
+    <h1 class="hidden">Footer</h1>
     <section class="footer">
-      <h2 class="hidden">Beck's Brewery Site Footer</h2>
-        <nav class="foot-nav" aria-label="Main Navigation">
-          <h3 class="hidden">Header Nav</h3>
-              <ul>
-                <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="ads.html">Promotion</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="foot-logo" >
-            <a href="index.html">
-                <img class="foot-logo-img" src="images/logo.png" alt="Beck's logo">
+      <h2 class="hidden">Footer Items</h2>
+        <div class="foot-logo" >
+          <a href="index.html">
+              <img class="foot-logo-img" src="images/logo.png" alt="Beck's logo">
+          </a>
+        </div>
+        <div class="foot-icon">
+            <a href="#">
+              <img class="icon-email" src="images/icon_email.png" alt="Email icon">
             </a>
-          </div>
-          <div class="foot-icon">
-              <a href="#">
-                <img class="icon-email" src="images/icon_email.png" alt="Email icon">
-              </a>
-              <a href="#">
-                <img class="icon-instagram" src="images/icon_instagram.png" alt="Instagram icon">
-              </a>
-              <a href="#">
-                <img class="icon-twitter" src="images/icon_twitter.png" alt="Twitter icon">
-              </a>
-              <a href="#">
-                <img class="icon-facebook" src="images/icon_facebook.png" alt="Facebook icon">
-              </a>
-          </div>
+            <a href="#">
+              <img class="icon-instagram" src="images/icon_instagram.png" alt="Instagram icon">
+            </a>
+            <a href="#">
+              <img class="icon-twitter" src="images/icon_twitter.png" alt="Twitter icon">
+            </a>
+            <a href="#">
+              <img class="icon-facebook" src="images/icon_facebook.png" alt="Facebook icon">
+            </a>
+        </div>
+        <div class="copyright">
+          Copyright © Becks All Rights Reserved
+        </div>
       </section>
+
+    <!-- back to top button -->
+    <h2 class="hidden">Back to top</h2>
+    <img class="back-to-top" src="images/icon_up.png" alt="Back to top button">
   </footer>
+</div>
 <script src="js/main.js" defer></script>
 </body>
 </html>
