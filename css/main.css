@@ -2115,7 +2115,7 @@ Product Page - Original Beer Info Window
 	margin-bottom: .5rem;
 }
 
-.cart-btn h3 {
+.btn-size h3 {
 	font-size: 4vmin;
 	color: #eeeeee;
 }
@@ -2153,6 +2153,216 @@ Product Page - Original Beer Info Window
 	line-height: 7vmin;
 	text-align: left;
 }
+
+@media screen and (min-width: 600px) {
+	.view-box {
+		display: none;
+		position: fixed;
+	  top: 0;
+	  left: 0;
+	  max-width: 100vw;
+	  height: 100%;
+		overflow: scroll;
+		background-color: rgba(0, 86, 156, 0.1);
+		padding: 2rem;
+	}
+
+	.info-popup {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		background-color: #fff;
+		padding: 2.5rem;
+		gap: 2rem;
+		margin: 0 1rem;
+		border-radius: 20px;
+	}
+
+	.popup-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 8vmin;
+		padding: .5rem;
+		cursor: pointer;
+	}
+
+	.info-section {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 1rem;
+	}
+
+	.beer-img {
+		width: 80vmin;
+	}
+
+	.info-section h2 {
+		font-family: "brice-bold";
+		font-size: 6vmin;
+		color: #00569C;
+	}
+
+	.info-section h3 {
+		font-family: "brice-semibold";
+		font-size: 4vmin;
+		color: #006FB8;
+		line-height: 6vmin;
+		margin-bottom: .5rem;
+	}
+
+	.btn-size h3 {
+		font-size: 4vmin;
+		color: #eeeeee;
+	}
+
+	.highlight img {
+		width: 20%;
+		margin: 1em 0 1em 1em;
+	}
+
+	.info-head-con {
+		display: flex;
+		flex-flow: row nowrap;
+		gap: .5rem;
+		text-align: center;
+		align-items: flex-end;
+		margin-bottom: .5rem;
+	}
+
+	.info-head-con h3 {
+		color: #00569C;
+	}
+
+	.info-head {
+		cursor: pointer;
+		border-bottom: thick solid #006FB8;
+	}
+
+	.info-head:active {
+		border-bottom: none;
+	}
+
+	.beer-info p {
+		font-size: 5.5vmin;
+		color: #006FB8;
+		line-height: 7vmin;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.view-box {
+		display: none;
+		position: fixed;
+	  top: 0;
+	  left: 0;
+	  max-width: 100vw;
+	  height: 100%;
+		overflow: scroll;
+		background-color: rgba(0, 86, 156, 0.1);
+		padding: 3rem;
+	}
+
+	.info-popup {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		background-color: #fff;
+		padding: 2.5rem;
+		gap: 5rem;
+		margin: 0 1rem;
+		border-radius: 20px;
+	}
+
+	.boxBeer-img {
+		width: 150%;
+	}
+
+	.popup-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 5vmin;
+		padding: .5rem;
+		cursor: pointer;
+	}
+
+	.info-section {
+		display: flex;
+		flex-flow: column nowrap;
+		gap: 2rem;
+		min-width: 700px;
+	}
+
+	.beer-img {
+		width: 80vmin;
+	}
+
+	.info-section h2 {
+		font-family: "brice-bold";
+		font-size: 4vmin;
+		color: #00569C;
+	}
+
+	.info-section h3 {
+		font-family: "brice-semibold";
+		font-size: 3vmin;
+		color: #006FB8;
+		line-height: 4vmin;
+		margin-bottom: .5rem;
+	}
+
+	.btn-size h3 {
+		font-size: 2.5vmin;
+		color: #eeeeee;
+	}
+
+	.highlight {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.highlight img {
+		width: 10%;
+		margin: 1em 0 1em 1em;
+		text-align: center;
+	}
+
+	.info-head-con {
+		display: flex;
+		flex-flow: row nowrap;
+		gap: 3rem;
+		align-items: flex-end;
+		justify-content: flex-start;
+		margin-bottom: .5rem;
+	}
+
+	.info-head-con h3 {
+		color: #00569C;
+	}
+
+	.info-head {
+		cursor: pointer;
+		border-bottom: thick solid #006FB8;
+	}
+
+	.info-head:active {
+		border-bottom: none;
+	}
+
+	.beer-info p {
+		font-size: 3vmin;
+		color: #006FB8;
+		line-height: 4vmin;
+		text-align: left;
+	}
+}
+
 /*--------------------------------------------------------------
 Promotion Page
 --------------------------------------------------------------*/
