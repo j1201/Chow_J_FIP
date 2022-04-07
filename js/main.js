@@ -19,6 +19,11 @@
         beerHead = document.querySelectorAll(".info-head"),
         beerTextBox = document.querySelector(".infoSec-text"),
         beerText = [`Beck's signature classic beer is fermented with organic ingredients. It gives you a clean, crispy and snuggely refreshing taste that you could not find elsewhere. To best enjoy the taste of beer, we recommend you to drink it at around 33-45 °F, pour it in the beer glass, and ENJOY!`,`Water, Wheat, Malt, Yeast, Hops`, `89 Calories, 5g carbs, 0g sugar`],
+        beerImg = document.getElementsByClassName("boxBeer-img"),
+        imgSrc = [`images/beer_original.png`, `images/beer_gold.jpg`, `images/beer_light.png`, `images/beer_pack_crop.png`],
+        flavours = [`Original \r\n`, `Gold`, `Light`, `Variety Pack`],
+        price = [`$5`, `$5`, `$5`, `$28`],
+        heading = document.querySelector(".beer-flavour"),
         viewClose = document.querySelectorAll(".popup-close");
 
   let click = document.getElementsByClassName("info-head");
@@ -80,6 +85,23 @@
 
     // Open the beer info box when clicking the view details button
     function beerBox() {
+
+      // get view button index
+      let index = this.dataset.index,
+          h3 = document.createElement("h3");
+
+      // change beer image
+      beerImg[0].src = imgSrc[index];
+
+      while ( heading.firstChild ) {
+        console.log(heading.firstChild);
+        heading.removeChild(heading.firstChild);
+      }
+
+      // change beer flavour
+      heading.appendChild(h3);
+      h3.innerHTML += `${flavours[index]} <br /> ${price[index]}`;
+
       viewBox.style.display = "block";
     }
 
