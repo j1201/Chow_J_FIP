@@ -808,7 +808,7 @@ Header - Nav
 		letter-spacing: 1px;
 		line-height: 28px;
 		color: #EEEEEE;
-		padding: 20px;
+		padding: 30px;
 		text-align: center;
 		position: relative;
 	}
@@ -2054,7 +2054,7 @@ Product Page
 }
 
 /*--------------------------------------------------------------
-Product Page - Original Beer Info Window
+Product Page - Beer Info Window
 --------------------------------------------------------------*/
 
 .view-box {
@@ -2095,6 +2095,7 @@ Product Page - Original Beer Info Window
 	display: flex;
 	flex-flow: column nowrap;
 	gap: .5rem;
+	max-width: 350px;
 }
 
 .beer-img {
@@ -2193,6 +2194,7 @@ Product Page - Original Beer Info Window
 		display: flex;
 		flex-flow: column nowrap;
 		gap: 1rem;
+		min-width: 400px;
 	}
 
 	.beer-img {
@@ -2300,7 +2302,7 @@ Product Page - Original Beer Info Window
 	}
 
 	.beer-img {
-		width: 80vmin;
+		min-width: 80vmin;
 	}
 
 	.info-section h2 {
@@ -2597,7 +2599,7 @@ Promotion Page
 
 	.two-text {
 		background-color: #4281B5;
-		padding: 5rem 1.5rem;
+		padding: 5rem;
 		margin-bottom: 2rem;
 		border-radius: 20px;
 	}
@@ -2666,7 +2668,7 @@ Promotion Page
 
 	.two-text {
 		background-color: #4281B5;
-		padding: 6rem 1.5rem;
+		padding: 3rem;
 		border-radius: 20px;
 		width: 25%;
 		margin-top: 2rem;
@@ -2681,7 +2683,7 @@ Promotion Page
 	}
 
 	.btn-container {
-		width: 32vmin;
+		width: 30vmin;
 	}
 
 	.promo-btn {
