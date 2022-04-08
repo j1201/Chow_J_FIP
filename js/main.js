@@ -20,7 +20,7 @@
         beerTextBox = document.querySelector(".infoSec-text"),
         beerText = [`Beck's signature classic beer is fermented with organic ingredients. It gives you a clean, crispy and snuggely refreshing taste that you could not find elsewhere. To best enjoy the taste of beer, we recommend you to drink it at around 33-45 °F, pour it in the beer glass, and ENJOY!`,`Water, Wheat, Malt, Yeast, Hops`, `89 Calories, 5g carbs, 0g sugar`],
         beerImg = document.getElementsByClassName("boxBeer-img"),
-        imgSrc = [`images/beer_original.png`, `images/beer_gold.jpg`, `images/beer_light.png`, `images/beer_pack_crop.png`],
+        imgSrc = [`images/beer_original.jpg`, `images/beer_gold.jpg`, `images/beer_light.jpg`, `images/beer_pack_crop.jpg`],
         flavours = [`Original \r\n`, `Gold`, `Light`, `Variety Pack`],
         price = [`$5`, `$5`, `$5`, `$28`],
         heading = document.querySelector(".beer-flavour"),
